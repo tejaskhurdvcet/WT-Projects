@@ -1,0 +1,79 @@
+/* Reset and body styling */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: rgb(53, 132, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Quiz container */
+.quiz-container {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 360px;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* General button styles */
+button {
+  padding: 12px 20px;
+  margin: 10px 0;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Start screen button */
+#start-screen button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+/* Quiz option buttons */
+button.option {
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+}
+
+button.option.correct {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.option.wrong {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Next button */
+#quiz-screen button:last-child {
+  background-color: #2196F3;
+  color: white;
+  margin-top: 15px;
+}
+
+/* Optional: disable text selection on buttons */
+button {
+  user-select: none;
+}
